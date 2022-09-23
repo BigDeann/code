@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #30cfd0;
+            /*background-image: url(../static/img1/虎年.jpg);*/
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-position: 0px -50px;
+        }
+        #login-box{
+            background-color: #00000068;
+            border-radius: 13px;
+            text-align: center;
+            margin: 0px auto;
+            margin-top: 80px;
+            width: 350px;
+            height: 400px;
+        }
+
+        #login-box h1{
+            padding-top: 60px;
+            color: #ffffff;
+        }
+
+        #login-box .input-box{
+            margin-top: 30px;
+        }
+        #login-box .input-box input{
+            border: none;
+            background: none;
+            border-bottom: #FFFFFF 2px solid;
+            padding: 5px 10px;
+            outline: none;
+            color: #FFFFFF;
+        }
+
+        #login-box button{
+            line-height:30px;
+            margin-top: 30px;
+            width: 130px;
+            height: 30px;
+            border-radius:13px ;
+            outline: none;
+            border: none;
+            background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+            color: #FFFFFF;
+        }
+
+        #login-box button:hover{
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+        #login-box .input-box i{
+            color: #FFFFFF;
+        }
+
+
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sign in</title>
+    <link rel="stylesheet" type="text/css"href="./css/index.css"/>
+    <link rel="stylesheet" type="text/css"href="./css/iconfont.css"/>
+</head>
+<body>
+
+<div id="login-box">
+    <h1>Register</h1>
+    <form method="post" action="/RegisterSuccess">
+        <div class="input-box">
+            <i class="iconfont">&#xe609;</i>
+
+            <input type="text" name="username" placeholder="请输入用户名" required/><br><br>
+        </div>
+        <div class="input-box">
+            <i class="iconfont">&#xe605;</i>
+            <input type="password" name="password" placeholder="请输入密码" required/><br><br>
+            <input type="password" name="password2" placeholder="请确认密码" required/><br><br>
+        </div>
+        <input type="submit" value="注册">
+    </form>
+
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>

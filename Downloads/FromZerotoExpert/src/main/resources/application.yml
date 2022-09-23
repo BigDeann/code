@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    name:  from_zeroto_expert
+    url: jdbc:mysql://localhost:3306/from_zeroto_expert?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC #url
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    #--这个是将我们的thymeleaf缓存设置为FALSE，便于我们测试
+    thymeleaf:
+      cache: false
+
+type-aliases-package: com.example.fromzerotoexpert.bean
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  #-- 这个是支持驼峰命名法，写上之后我们从数据库传来的数据就可以直接改写成驼峰命名法
+  #比如说数据库是user_name 你在我们的实体类中就可以写成userName 不过这个不重要
+  configuration:
+    map-underscore-to-camel-case: true
