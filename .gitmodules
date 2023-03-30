@@ -1,0 +1,3 @@
+[submodule "GoWorks/src/gin-all-demo/gin-mall-main/service/user.go"]
+	path = GoWorks/src/gin-all-demo/gin-mall-main/service/user.go
+	url = git@github.com:CocaineCong/gin-mall.git
