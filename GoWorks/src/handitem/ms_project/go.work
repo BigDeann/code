@@ -1,0 +1,8 @@
+go 1.19
+
+
+use (
+	./project-user
+	./project-common
+	./project-api
+)
