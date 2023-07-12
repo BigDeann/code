@@ -12,7 +12,7 @@ var LoginServiceClient loginServiceV1.LoginServiceClient
 // 拿到rpc的对象
 func InitRpcUserClient() {
 
-	//引入edtc
+	//引入etcd
 	//etcdRegister := discovery.NewResolver(config.C.EtcdConfig.Addrs, logs.LG)
 	//resolver.Register(etcdRegister)
 	//conn, err := grpc.Dial("etcd:///user", grpc.WithTransportCredentials(insecure.NewCredentials()))
